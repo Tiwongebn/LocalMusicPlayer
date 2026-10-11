@@ -1,0 +1,105 @@
+# ============================================================
+# .NET / ASP.NET Core (backend)
+# ============================================================
+
+# Build output
+backend/bin/
+backend/obj/
+
+# SQLite database files — contains your data, not source code
+backend/*.db
+backend/*.db-shm
+backend/*.db-wal
+*.db
+*.db-shm
+*.db-wal
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+
+# User-specific / IDE
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+
+# Build results (belt-and-suspenders patterns)
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Publish output
+publish/
+
+# ============================================================
+# Secrets & environment config — NEVER commit these
+# ============================================================
+
+.env
+.env.*
+!.env.example
+
+# appsettings overrides with real config (keep the base template)
+backend/appsettings.Development.json
+backend/appsettings.Production.json
+# Uncomment the next line if your base appsettings.json has real values:
+# backend/appsettings.json
+
+# ============================================================
+# React / Vite (frontend)
+# ============================================================
+
+frontend/node_modules/
+node_modules/
+
+frontend/dist/
+frontend/dist-ssr/
+dist/
+dist-ssr/
+
+# Vite local overrides
+*.local
+
+# ============================================================
+# Logs
+# ============================================================
+
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ============================================================
+# IDEs and editors
+# ============================================================
+
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.idea/
+
+# Vim/Emacs swap files
+*.sw?
+*.suo
+*.ntvs*
+*.njsproj
+
+# ============================================================
+# OS files
+# ============================================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
